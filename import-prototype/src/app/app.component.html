@@ -1,0 +1,12 @@
+<div>
+  <p>
+    If this is in production mode, you will see "production-component works!" below. Otherwise, nothing.
+  </p>
+  <p>IS PRODUCTION MODE: {{production}}</p>
+  <hr />
+  <ng-template #container></ng-template>
+  <hr />
+  <p>The section below <em>should</em> contain a child with additional production-only components, but they will
+    never show up.  A limitation of this approach is that the restricted components must be managed at each layer.</p>
+  <app-child></app-child>
+</div>
